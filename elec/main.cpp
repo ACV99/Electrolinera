@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickView>
+#include <QCanBus>
 
 int main(int argc, char *argv[])
 {
@@ -17,3 +18,7 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+
+/*if (QCanBus::instance()->plugins().contains(QStringLiteral("socketcan"))) {
+    // plugin available
+}*/

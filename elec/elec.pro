@@ -1,4 +1,5 @@
 QT += quick
+QT += serialbus
 
 CONFIG += c++14
 
@@ -25,6 +26,6 @@ QML_IMPORT_PATH = /home/adrian/codigo/Qt/elec/qml/imports/
 QML_DESIGNER_IMPORT_PATH =
 
 # Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+#qnx: target.path = /tmp/$${TARGET}/bin
+#else: unix:!android: target.path = /opt/$${TARGET}/bin
+#!isEmpty(target.path): INSTALLS += target
